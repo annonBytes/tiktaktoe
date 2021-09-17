@@ -57,7 +57,7 @@
     display: none;
     width: 200px;
     top: 120px;
-    background-color: Yellow;
+    background-color: Green;
     position: absolute;
     left: 50%;
     margin-left: -100px;
@@ -65,7 +65,7 @@
     padding-bottom: 50px;
     text-align: center;
     border-radius: 5px;
-    color: black;
+    color: white;
     font-size: 2em;
 }
 

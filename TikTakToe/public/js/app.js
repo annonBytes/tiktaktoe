@@ -75,7 +75,6 @@ ws.addEventListener('message', (message) => {
 
 
 ws.addEventListener('open', () => {
-
     document
         .querySelector('.game-board')
         .addEventListener('click', onCellClicked)
@@ -125,7 +124,6 @@ function checkWin(board = [], playerID) {
             checkTie()
         }
         
-        
     }
     return gameWon
 }
@@ -137,9 +135,7 @@ function gameOver() {
 }
 
 function declareWinner(winnerID) {
-    //document.querySelector(".endgame").style.display = "block";
-    //document.querySelector(".endgame .text").innerText = who;
-    
+   
     var winnerText = ''
     if (winnerID === gameState.playerID){
         winnerText = 'You Won'
@@ -150,8 +146,7 @@ function declareWinner(winnerID) {
     }
     document.querySelector('.game-info__players-turn').innerText = winnerText;
     
-    // document.querySelectorgameWonBy.playergame-info__players-turn').innerText = 'Wins';
-    // declareWinner()
+    
     console.log("Game Over & Finished..")
     gameOver()
 }
